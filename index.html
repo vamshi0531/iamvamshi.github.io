@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aitha</title>
+    <link rel="stylesheet" href="portt.css">
+    <script src="https://kit.fontawesome.com/6d3b0d0091.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <img src="images/logo.png" class="nav">
+              <ul>
+                <li><a href="#header"> Home</a></li>
+                <li><a href="myskills"> Profile</a></li>
+                <li><a href="#portfolio"> portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact"> Reach Me</a></li>
+
+               </ul>
+            </nav>
+            <div class="header-text">
+                 <h2>Hai,I am <br> <h1><span>Vamshi Aitha</span></h1></span> </h2>
+            </div>
+        </div>
+    </div>
+   <!-----about---->
+
+    <div id="about">
+      <div class="container">
+          <div class="row">
+             <div class="about-col-1">
+                   <img src="images/avv.jpg" width="470" height="600">
+             </div>
+             <div class="about-col-2">
+                 <h1 class="sub-title">About Me</h1>
+                 <p class="info">I'm Vamshi Aitha,<br> I am currently pursuing BTech 3rd year in the stream  of CSE . <br> Indur Institue of Engineering and Technology.</p>
+             </div>
+          </div>
+       </div>
+    </div>
+    <!-----My skills---->
+     <div id="myskills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2>
+                    <p>Intermediate</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>Intermediate</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Html</h2>
+                    <p>Advanced</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3"></i>
+                    <h2>Css</h2>
+                    <p>Intermediate</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-c"></i>
+                    <h2>C</h2>
+                    <p>Intermediate</p>
+                    
+                </div>
+            </div>
+
+        </div>
+     </div>   
+     <div id="education">
+        <div class="container">
+            <h1 class="subtitle">Education</h1>
+            <div class="edu-list">
+                <div>
+                    <i class="fa-solid fa-school" style="color: #fcff2f;"></i>
+                    <h2>SSC     (Sharadhanikethan High Schoool)</h2>
+                    <p>percentage:90%</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-building-columns" style="color: #e5ff1e;"></i>
+                    <h2>Intermediate  (MasterMinds Junior College)</h2>
+                    <p>percentage:80%</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-graduation-cap" style="color: #f7f12b;"></i>
+                    <h2>BTech(Indur Institue of Tachnology)</h2>
+                    <p>percentage:70%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------reach me---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>crazyyvamshi@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>8121503301</p>
+             <div class="social-icons">
+                  <a href="https://www.instagram.com/its__me_vamshi/"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100010304081226"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.linkedin.com/in/vamshi-aitha-183449215/"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/vamshi0531"><i class="fa-brands fa-github"></i></a>
+                  <br><br>
+                  <a href="" class="btn" >Download CV</a>
+                  
+             </div>
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="your name" required>
+                    <input type="text" name="email" placeholder="your email" required>
+                    <textarea name="message" rows="6" placeholder="your message" ></textarea>
+                    <button type="submit" class="btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-heart" style="color: #ff0000;"></i>@Vamshiaitha</p>
+        
+    </div>
+</div>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw_sBjJSkOrCjHXR8p91p0H9w4gXPsBBEthbjiV1_dh1l4Blu3r6FkqK1qYgedtrHp5/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

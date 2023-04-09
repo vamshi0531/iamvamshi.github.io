@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+ background-color: #080808;   
+ color: #fff; 
+}
+#header{
+    width: 100%;
+    height: 100dvb;
+    background-image: url(images/va.jpg);
+    background-size: cover;
+    background-position: left;
+    
+}
+
+.container{
+  padding: 9px 8% ;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+} 
+nav ul li a{
+    color: #000000;
+    text-decoration-line: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: rgba(255, 81, 0, 0.692);
+    position: absolute;
+    left: 0%;
+    bottom: -6px;
+    transition: o.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+}
+.header-text h1 span{
+    color: rgb(236, 13, 13);
+}
+/*-----about----*/
+#about{
+    padding: 90px 0%;
+    color: #f0e6e6;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+flex-basis: 45%;
+}
+.about-col-1 img{
+   
+    border-radius: 15px;
+}
+.about-col-2 {
+  flex-basis: 50%;
+}
+.sub-title{
+    font-size: 70px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.about-col-2 p{
+    margin-top: 40px;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.info{
+
+    font-size:large;
+    
+}
+/*-------------myskills-------*/
+#skills{
+    padding: 40px 0;  
+}
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.skills-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.skills-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.skills-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.skills-list div:hover{
+    background: #2571b8;
+    transform: translateY(-10px);
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+/*------------Eduaction---------*/
+#education{
+    padding: 40px 0;
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.edu-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.edu-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.edu-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.edu-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.edu-list div:hover{
+    background: #217fd6;
+    transform: translateY(-10px);
+}
+/*---------------contact----------------*/
+.contact-left{
+  flex-basis: 35%;  
+}
+.contact-right{
+    flex-basis: 60%;  
+  }
+  .contact-left p{
+    margin-top: 30px ;
+
+  }
+  .contact-left p i{
+    color: #003cff;
+    margin-right: 15px;
+    font-size: 25px;
+
+  }
+  .social-icons{
+    margin-top: 30px;
+
+  } 
+  .social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #928f8f;
+    display: inline-block;
+    transition: transform(0.5s) ;
+  }
+  .social-icons a:hover{
+    color: #e2e3e7;
+    transform:translateY(-5px) ;
+
+  }
+  .btn{
+    display: inline-block;
+    padding: 15px 4px;
+    background: #044deca2 ;
+    border-radius: 20px;
+  }
+  .contact-right form{
+    width: 100%;
+  }
+  form input,form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #3d3c3c;
+    padding: 15px ;
+    margin: 15px; 
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.btn2{
+    
+    font-size: 20px;
+    color: #e7e1e1;
+    display: inline-block;
+    padding: 17px 6px;
+    background: #0461eca2 ;
+    border-radius: 10px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 200;
+    margin-top: 20px;
+}
+/*--------------------------------css for small screnns*/
+@media only screen and (max-with:600px){
+
+}
+  
